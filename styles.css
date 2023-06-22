@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.row{
+    margin: 32px;
+}
+
 .purple {
     color: #6415ff;
 }
@@ -46,17 +50,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 18px;
 }
 
 .nav__links {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
 }
 
-.nav__link {
-  margin: 0 24px;
+
+.nav__link{
+    margin: 0 24px;
 }
 
 .logo {
@@ -77,9 +82,32 @@ color: #243E63;
     padding-left: 48px;
 }
 
+.nav__link--primary {
+    
+}
+
 /* LANDING */
 
-.header__description {
+.header__container{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;    
+}
+
+
+ .landing__button{
+    margin: 0 24px;
+ }
+
+ .customer--logos{
+width: 66%;
+padding-top: 12px;
+}
+
+.landing__img {
+    width: 60%;
+}
+
+.landing__img--wrapper{
+    width: 60%;
 }
