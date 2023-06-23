@@ -101,6 +101,7 @@ color: #243E63;
 
 .header__description {
 width: 60%;
+max-width: 533.33px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -110,8 +111,15 @@ justify-content: space-between;
     font-size: 48px;
 }
 
+.header__description--para{
+    font-size: 18px;
+    margin: 32px 0;
+}
  .landing__button{
-    margin: 0 24px;
+   font-size: 16px;
+   white-space: nowrap;
+   text-align: center;
+   margin: 16px 0px;
  }
 
  .customer--logos{
@@ -127,3 +135,23 @@ padding-top: 12px;
     width: 60%;
     height: 100%;
 }
+
+.header__form{
+    max-width: 448px;
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+   padding: 20px 192px 20px 32px;
+   border: none;
+}
+
+
+.email {
+    display: flex;
+    border: gray solid;
+    border-radius: 9999px;
+    z-index: 1;
+}
+
