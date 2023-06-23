@@ -94,7 +94,7 @@ color: #243E63;
     width: 100%;
     max-width: 1280px;
     display: flex;
-    align-items: center;    
+    align-items: center;  
     margin-left: 154px;
     margin-right: 154px;
 }
@@ -115,12 +115,6 @@ justify-content: space-between;
     font-size: 18px;
     margin: 32px 0;
 }
- .landing__button{
-   font-size: 16px;
-   white-space: nowrap;
-   text-align: center;
-   margin: 16px 0px;
- }
 
  .customer--logos{
 width: 66%;
@@ -139,19 +133,22 @@ padding-top: 12px;
 .header__form{
     max-width: 448px;
     display: flex;
-    flex-direction: row;
 }
 
 input {
+   width: 100%;
    padding: 20px 192px 20px 32px;
    border: none;
+   border: gray solid;
+   border-radius: 9999px;
+   position: relative;
 }
 
+.landing__button{
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    margin: 16px 0px;  
+  }
 
-.email {
-    display: flex;
-    border: gray solid;
-    border-radius: 9999px;
-    z-index: 1;
-}
 
