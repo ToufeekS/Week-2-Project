@@ -133,6 +133,7 @@ padding-top: 12px;
 .header__form{
     max-width: 448px;
     display: flex;
+    align-items: center;
 }
 
 input {
@@ -141,7 +142,6 @@ input {
    border: none;
    border: gray solid;
    border-radius: 9999px;
-   position: relative;
 }
 
 .landing__button{
@@ -149,6 +149,7 @@ input {
     white-space: nowrap;
     text-align: center;
     margin: 16px 0px;  
-  }
+}
+
 
 
