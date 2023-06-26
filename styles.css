@@ -324,8 +324,54 @@ margin: 8px 0px 0px 16px;
 .steps__container{
     display: flex;
     width: 100%;
+    padding-top: 96px;
+    margin-bottom: 100px;
+ 
 }
 
+
+.steps__img{
+    width: 640px;
+}
+
+.steps__container--description{
+ margin: 0 auto;
+}
+
+.steps__title{
+    color: #243E63;
+}
+
+
 .steps__list{
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    width: 100%;
+    max-width: 576px;
+}
+
+.step{
+    margin-left: 24px;
+    padding: 0;
+    margin-bottom: 36px;
+    width: 100%;
+    max-width: 320px;
+}
+
+
+
+.step__description{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #718096;
+}
+
+.step__subtitle{
+    font-size: 20px;
+    color: #243E63;
+}
+
+.step__description{
+    color: #718096;
 }
