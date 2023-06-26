@@ -44,6 +44,7 @@ li{
     padding: 0.75rem 2rem;
     color: white;
     text-decoration: none;
+    border: none;
 }
 
 /* NAV */
@@ -205,7 +206,7 @@ font-weight: 700;
     align-items: center;
 }
 
-.features__small-title{
+.small-title{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -214,13 +215,13 @@ font-weight: 700;
     font-size: 16px;
 }
 
-.features__title{
+.title{
     font-size: 48px;
     font-weight: 900;
     letter-spacing: 0.025em;
 }
 
-.features__description--para{
+.description--para{
     margin-top: 16px;
     max-width: 576px;
     font-weight: 500;
@@ -276,4 +277,55 @@ margin: 8px 0px 0px 16px;
     color: #7C8BA1;
     font-weight: 500;
     line-height: 2;
+}
+
+/*WORK*/
+
+.work__container{
+    margin: 0px 19px;
+    padding: 96px 0px;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+}
+
+.work__container--description{
+    padding: 32px 0px;
+    max-width: 576px;
+    width: 100%;
+    margin-right: 30px;
+}d
+
+.work__title{
+    margin-top: 16px;
+}
+
+.work__para{
+    margin-top: 16px;
+    text-align: start;
+}
+
+.work--button{
+    margin-top: 32px;
+}
+
+.work__container--img{
+    border: 1px solid gray;
+    max-height: 413px;
+}
+
+.work__img{
+    width: 100%;
+    max-width: 640px;
+}
+
+/* STEPS */
+
+.steps__container{
+    display: flex;
+    width: 100%;
+}
+
+.steps__list{
+    
 }
