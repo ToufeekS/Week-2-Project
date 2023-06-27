@@ -573,8 +573,10 @@ padding: 0px;
 
 .item__top--color{
     width: 100%;
-    height: 6px;
+    height: 10px;
     background-color: rgb(17, 145, 204);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .top--red{
