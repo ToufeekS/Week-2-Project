@@ -17,6 +17,9 @@ p{
     color: #6415ff;
 }
 
+.white{
+    color: white !important;
+}
 
 a {
     text-decoration: none;
@@ -26,11 +29,6 @@ a {
 a:hover {
     text-decoration: underline;
     color: #6415ff;
-}
-
-
-.white{
-    color: white;
 }
 
 li{
@@ -425,14 +423,17 @@ padding: 0px;
     color: #7c8ba1;
 }
 
-.fa-dollar-sign, .fa-briefcase{
-    padding: 16px;
-    color: #6415ff;
+.value__icon--wrapper{
+    padding: 20px;
     border: solid 1px ;
     border-color: rgb(226, 232, 240);
     border-radius: 9999px;
     height: 20px;
     width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ae6b4; 
 }
 
 
@@ -443,6 +444,10 @@ padding: 0px;
 
 .fa-briefcase{
     color: #9b2c2c;
+    background-color: #feb2b2;
+}
+
+.fa-briefcase__bg{
     background-color: #feb2b2;
 }
 
@@ -459,10 +464,114 @@ padding: 0px;
 
 /*PRICING*/
 
-.pricing__container--description{
-    text-align: center;
+
+.pricing__container{
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-p.description--para{
-    margin: 0px !important;
+.pricing__container--description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__list--container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+}
+
+.pricing__item{
+    margin: 64px 0px 0px 0px;
+    width: calc(100%/3.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px gray solid;
+    border-radius: 17px;
+}
+
+.pricing__title{
+    padding: 32px 0px;
+    line-height: 1.625;
+}
+   
+.pricing__title--small{
+    color: #1A202C;
+    font: 20px;
+    font-weight: 700;
+}
+
+.pricing__title--price{
+    color: #1A202C;
+    font-size: 48px;
+    margin: 4px 0px;
+    font-weight: 900;
+}
+
+.price__title--period{
+    color: #A0AEC0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.pricing__item--container{
+    padding: 32px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.item__feature{
+    margin: 20px 0px 0px;
+    color: #718096;
+    font-size: 16px;
+}
+
+.item__feature--title{
+    color: #1A202C;
+    font-size: 20px;
+}
+
+.pricing__item--button{
+    padding: 32px 16px;
+    max-width: 320px;
+}
+
+.pricing--button{
+    border-radius: 9999px;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px 32px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}  
+
+.business{
+    background-color: #6415ff;
+}
+
+.enterprise--button{
+    background-color: red;
+}
+
+.personal--button{
+    background-color: rgb(17, 145, 204);
+}
+
+.business--button{
+    color: #6415ff;
+}
+
+.item__top--color{
+    width: 100%;
+    color: rgb(17, 145, 204);
 }
