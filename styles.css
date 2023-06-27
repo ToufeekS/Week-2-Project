@@ -492,7 +492,7 @@ padding: 0px;
     justify-content: center;
     align-items: center;
     border: 1px gray solid;
-    border-radius: 17px;
+    border-radius: 5px;
 }
 
 .pricing__title{
@@ -573,5 +573,10 @@ padding: 0px;
 
 .item__top--color{
     width: 100%;
-    color: rgb(17, 145, 204);
+    height: 6px;
+    background-color: rgb(17, 145, 204);
+}
+
+.top--red{
+    background-color: red;
 }
