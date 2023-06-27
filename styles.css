@@ -254,7 +254,7 @@ flex-direction: column;
 margin: 8px 0px 0px 16px;
 }
 
-.fa-solid {
+.feature__icon {
     padding: 20px;
     font-size: 24px;
     color: #6415ff;
@@ -391,9 +391,78 @@ margin: 8px 0px 0px 16px;
     margin-bottom: 32px;
 }
 
+.values__description--para{
+    padding-bottom: 36px;
+    color: #7c8ba1;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.values__list{
+    display: flex;
+}
+
+.value{
+width: 100%;
+margin: 32px 32px 0px 0px;
+padding: 0px;
+}
+
+.value__icon{
+    padding-bottom: 12px;
+    display: flex;
+}
+
+.value__subtitle{
+    margin-left: 12px;
+    color: #243E63;
+    max-width: 105px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.value__description{
+    color: #7c8ba1;
+}
+
+.fa-dollar-sign, .fa-briefcase{
+    padding: 16px;
+    color: #6415ff;
+    border: solid 1px ;
+    border-color: rgb(226, 232, 240);
+    border-radius: 9999px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.fa-dollar-sign{
+    color: green;
+    background-color: #9ae6b4;    
+}
+
+.fa-briefcase{
+    color: #9b2c2c;
+    background-color: #feb2b2;
+}
+
 .values__img--wrapper{
     width: 100%;
 }
 .values__img{
     max-width: 640px;
+}
+
+.values__button{
+    margin-top: 48px;
+}
+
+/*PRICING*/
+
+.pricing__container--description{
+    text-align: center;
+}
+
+p.description--para{
+    margin: 0px !important;
 }
