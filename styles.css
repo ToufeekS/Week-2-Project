@@ -655,16 +655,42 @@ padding-left: 16px;
 /*BOTTOM*/
 
 .bottom__container{
-    background-color: #6415ff;
-    max-width: 1280px;
-    max-height: 282px;
-    margin: 0px 114.5px;
     padding: 96px 0px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.bottom__container--box{
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    background-color: #6415ff;
+    height: 100%;
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    border-radius: 8px;
+}
+
+.bottom__buttons{
+    display: flex;
+    align-items: center;
 }
 
 .starting--button{
     background-color: red;
+    margin-right: 32px;
+    padding: 20px 40px;
+}
+
+.contact--button{
+    background-color: inherit;
+    border: 1px solid;
+    padding: 20px 40px;
+}
+
+.bottom__title{
+    font-size: 30px;
+    color: #f7fafc;
+    max-width: 480px;
 }
