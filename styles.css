@@ -7,10 +7,6 @@
     font-family: 'Inter', system-ui;
 }
 
-body{
-    padding: 32px;
-}
-
 .row{
     width: 100%;
     max-width: 1280px;
@@ -290,7 +286,7 @@ margin: 8px 0px 0px 16px;
 .work__container{
     margin: 0px 19px;
     padding: 96px 0px;
-    width: 100%;
+   
     max-width: 1280px;
     display: flex;
 }
@@ -791,6 +787,7 @@ color: #f7fafc;
     border: none 1px;
     border-radius: 28px;
     background-color: #CBD5E0;
+    margin-left: 8px;
 }
 
 .fa-brands{
