@@ -104,12 +104,36 @@ font-weight: bold;
 font-size: 24px;
 font-weight: 900;
 color: #243E63;
+transition: 300ms ease all;
+}
+
+.nav__logo:hover{
+    cursor: pointer;
+    color: #5011cc;
 }
 
 .nav__link--login{
     margin-left: 48px;
 }
 
+.nav__link--primary {
+    background-color: #6415ff;
+    border-radius: 9999px;
+    color: #fff;
+    padding: 12px 32px;
+    transition-duration: 300ms;
+  }
+  
+  .nav__link--primary:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
+  }
+  
+  .login {
+    margin-left: 24px;
+  }
+  
 
 /* Button Start */
 
@@ -198,24 +222,7 @@ color: #243E63;
   
   /* Button Finish */
    
-  .nav__link--primary {
-    background-color: #6415ff;
-    border-radius: 9999px;
-    color: #fff;
-    padding: 12px 32px;
-    transition-duration: 300ms;
-  }
-  
-  .nav__link--primary:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #5011cc;
-  }
-  
-  .login {
-    margin-left: 24px;
-  }
-  
+
 
 /* LANDING */
 
@@ -291,6 +298,12 @@ input {
     right: 0;
     margin: 8px 8px 8px 0px;
     border: none;
+}
+
+.landing__button:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
 }
 
 .email{
@@ -428,6 +441,12 @@ margin: 8px 0px 0px 16px;
 
 .work--button{
     margin-top: 32px;
+}
+
+.work--button:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
 }
 
 .work__container--img{
@@ -608,6 +627,12 @@ max-width: 288px;
     margin-top: 48px;
 }
 
+.values__button:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
+}
+
 /*PRICING*/
 
 
@@ -698,9 +723,10 @@ max-width: 288px;
     text-decoration: none;
     border: none;
     padding: 12px 32px;
-    font-size: 0.875rem;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: bold;
 }  
 
 .business{
@@ -709,18 +735,32 @@ max-width: 288px;
 
 .enterprise--button{
     background-color: red;
+    transition: 300ms ease all;
+}
+
+.enterprise--button:hover{
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0px 2px 10px 0px #1A202C;
 }
 
 .personal--button{
     background-color: rgb(17, 145, 204);
+    transition: 300ms ease all;
 }
+
+.personal--button:hover{
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0px 2px 10px 0px #1A202C;
+} 
 
 .business--button{
     color: #6415ff;
+    transition: 300ms ease all;
 }
 
 .business--button:hover{
-    background-color: white;
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0px 2px 10px 0px #1A202C;
 }
 
 .item__top--color{
@@ -832,12 +872,23 @@ padding-left: 16px;
     background-color: red;
     margin-right: 32px;
     padding: 20px 40px;
+    transition: all 300ms ease;
+}
+
+.starting--button:hover{
+    background-color: #9b2c2c;
 }
 
 .contact--button{
     background-color: inherit;
     border: 1px solid;
     padding: 20px 40px;
+    transition: 300ms ease all;
+}
+
+.contact--button:hover{
+    background-color: white;
+    color: #6415ff;
 }
 
 .bottom__title{
