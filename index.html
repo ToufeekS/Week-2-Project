@@ -6,23 +6,27 @@
     <title>Week 2 project</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/9bd1a0fc4b.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 
 
 <body>
+    <div class="site__padding">
     <section id="landing"> 
         <nav>
         <div class="nav__logo"><img src="./assets/Logo.svg" class="logo">Treact</div>
         <ul class="nav__links">
-            <li class="nav__link"><a href="#about">About</a></li>
-            <li class="nav__link"><a href="#about">Blog</a></li>
-            <li class="nav__link"><a href="#about">Pricing</a></li>
-            <li class="nav__link"><a href="#about">Contact Us</a></li>
-            <li class="nav__link nav__link--login"><a href="#about">Login</a></li>
+            <li class="nav__link nav__underline"><a href="#about">About</a></li>
+            <li class="nav__link nav__underline"><a href="#about">Blog</a></li>
+            <li class="nav__link nav__underline"><a href="#about">Pricing</a></li>
+            <li class="nav__link nav__underline"><a href="#about">Contact Us</a></li>
+            <li class="nav__link nav__link--login nav__underline"><a href="#about">Login</a></li>
             <li class="nav__link nav__link--primary purple--button"><a href="#about"><span class="white">Sign Up</span></a></li>    
         </ul>
+        <button class="btn__burger" onclick="openMenu()"> 
+        </button>
     </nav>
-</div>
+
     <header>
         <div class="row">
         <div class="header__container">
@@ -40,7 +44,6 @@
             <figure class="landing__img--wrapping"><img src="./assets/woman at chair.svg" class="landing__img"></figure>
        </div>
     </div>
-</div>
     </header>
    
 </section>
@@ -172,7 +175,7 @@
                 </ul> 
                 <button class="purple--button values__button">Learn more</button>           
             </div>
-            <figure class="values__img-wrapper"><img src="./assets/values.svg" class="values__img"></figure>
+            <figure class="values__img--wrapper"><img src="./assets/values.svg" class="values__img"></figure>
         </div>
     </div>
 </section>
@@ -284,6 +287,7 @@
     </div>
 </section>
 
+
 <section id="bottom">
     <div class="row">
         <div class="bottom__container">
@@ -297,6 +301,7 @@
     </div>
     </div>
 </section>
+</div>
 
 <footer>
     <div class="footer__container">

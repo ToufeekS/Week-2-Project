@@ -53,7 +53,13 @@ li{
     border: none;
 }
 
+.site__padding{
+    padding: 32px;
+}
+
 /* NAV */
+
+
 
 nav {
     display: flex;
@@ -62,7 +68,7 @@ nav {
     max-width: 1280px;
     padding-top: 32px;
     margin: 0 auto;
-}
+    }
 
 .nav__links {
     display: flex;
@@ -341,6 +347,10 @@ margin: 8px 0px 0px 16px;
     max-width: 640px;
 }
 
+.steps__img--container{
+    padding-right: 16px;
+}
+
 .steps__container--description{
  margin: 0 auto;
  width: 100%;
@@ -370,7 +380,6 @@ margin: 8px 0px 0px 16px;
     max-width: 320px;
     
 }
-
 
 
 .step__description{
@@ -730,6 +739,8 @@ padding-left: 16px;
     padding-top: 96px;
     padding-bottom: 96px;
     background-color: #6415ff;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .footer__lists{
@@ -819,6 +830,12 @@ color: #f7fafc;
     }
 
 
+    /*NAV*/
+
+    .nav__links{
+        display: none;
+    }
+
     /*LANDING*/
 
     .header__container{
@@ -829,6 +846,7 @@ color: #f7fafc;
     
     .header__description--title{
         font-size: 30px;
+        text-align: center;
     }
 
     .header__description--para{
@@ -855,11 +873,20 @@ color: #f7fafc;
         padding-top: 48px;
     }
 
+    /* FEATURES */
+
+    .title{
+        font-size: 36px;
+        text-align: center;
+    }
+
+
     /* WORK */
 
     .work__title{
         font-size: 36px;
         max-width: 386.5px;
+        text-align: start;
     }
 
     .work__para{
@@ -870,6 +897,7 @@ color: #f7fafc;
 
    .steps__title{
     font-size: 36px;
+    text-align: start;
    }
 
    /*VALUES*/
@@ -880,6 +908,7 @@ color: #f7fafc;
 
    .values__title{
     font-size: 36px;
+    text-align: start;
    }
 
    .values__description--para{
@@ -903,6 +932,7 @@ color: #f7fafc;
 
    .testimonials__title{
     font-size: 36px;
+    text-align: start;
    }
 
    .testimonials__img{
