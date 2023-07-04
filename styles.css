@@ -7,6 +7,10 @@
     font-family: 'Inter', system-ui;
 }
 
+body{
+    padding: 32px;
+}
+
 .row{
     width: 100%;
     max-width: 1280px;
@@ -296,7 +300,7 @@ margin: 8px 0px 0px 16px;
     max-width: 576px;
     width: 100%;
     margin-right: 30px;
-}d
+}
 
 .work__title{
     margin-top: 16px;
@@ -314,6 +318,10 @@ margin: 8px 0px 0px 16px;
 .work__container--img{
     border: 1px solid gray;
     max-height: 413px;
+    height: 100%;
+    width: 100%;
+    max-width: 640px;
+    align-self: center;
 }
 
 .work__img{
@@ -328,20 +336,25 @@ margin: 8px 0px 0px 16px;
     width: 100%;
     padding-top: 96px;
     margin-bottom: 100px;
- 
+    align-items: center; 
 }
 
 
 .steps__img{
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
 }
 
 .steps__container--description{
  margin: 0 auto;
+ width: 100%;
+ max-width: 415px;
 }
 
 .steps__title{
     color: #243E63;
+    max-width: 415px;
+    width: 100%;
 }
 
 
@@ -351,14 +364,15 @@ margin: 8px 0px 0px 16px;
     margin-top: 48px;
     width: 100%;
     max-width: 576px;
+    
 }
 
 .step{
-    margin-left: 24px;
     padding: 0;
     margin-bottom: 36px;
     width: 100%;
     max-width: 320px;
+    
 }
 
 
@@ -389,6 +403,11 @@ margin: 8px 0px 0px 16px;
     display: flex;
 }
 
+.values__container--description{
+    width: 100%;
+    max-width: 576px;
+}
+
 .values__title{
     margin-bottom: 32px;
 }
@@ -408,6 +427,7 @@ margin: 8px 0px 0px 16px;
 width: 100%;
 margin: 32px 32px 0px 0px;
 padding: 0px;
+max-width: 288px;
 }
 
 .value__icon{
@@ -457,9 +477,13 @@ padding: 0px;
 
 .values__img--wrapper{
     width: 100%;
-}
-.values__img{
     max-width: 640px;
+    display: flex;
+}
+
+.values__img{
+    width: 100%;
+    
 }
 
 .values__button{
@@ -472,6 +496,7 @@ padding: 0px;
 .pricing__container{
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 100%;
 }
 
 .pricing__container--description{
@@ -485,6 +510,7 @@ padding: 0px;
     display: flex;
     justify-content: space-around;
     max-width: 1280px;
+    width: 100%;
 }
 
 .pricing__item{
@@ -604,10 +630,13 @@ padding: 0px;
 
 .testimonials__img{
     max-width: 640px;
+    width: 100%;
 }
 
 .testimonials__img--wrapper{
     max-width: 640px;
+    width: 100%;
+    align-self: center;
 }
 
 .testimonials__description--secondary{
@@ -759,11 +788,13 @@ color: #f7fafc;
 
 .footer__social--icon{
     padding: 8px;
-    
+    border: none 1px;
+    border-radius: 28px;
+    background-color: #CBD5E0;
 }
 
 .fa-brands{
-    padding: 8px;
+   
     border: none 1px;
     border-radius: 28px;
     background-color: #CBD5E0;
@@ -777,4 +808,121 @@ color: #f7fafc;
     border-bottom: 1px solid;
     border-color: #A0AEC0;
     opacity: 0.4;
+}
+
+/* SMALL TABLETS AND PHONES */
+
+@media (max-width: 1023px) {
+    
+    .description--para{
+        font-size: 16px;
+    }
+
+
+    /*LANDING*/
+
+    .header__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header__description--title{
+        font-size: 30px;
+    }
+
+    .header__description--para{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header__description{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__customer--logos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer--logos{
+        padding: 0;
+    }
+
+    .landing__img--wrapping{
+        padding-top: 48px;
+    }
+
+    /* WORK */
+
+    .work__title{
+        font-size: 36px;
+        max-width: 386.5px;
+    }
+
+    .work__para{
+        font-size: 16px;
+    }
+
+   /* STEPS */
+
+   .steps__title{
+    font-size: 36px;
+   }
+
+   /*VALUES*/
+
+   .values__list{
+    flex-wrap: wrap;
+   }
+
+   .values__title{
+    font-size: 36px;
+   }
+
+   .values__description--para{
+    font-size: 16px;
+   }
+
+   /*PRICING*/
+
+   .pricing__list--container{
+    display: block;
+    margin: 0 auto;
+   }
+
+   .pricing__item{
+    max-width: 384px;
+    width: 100%;
+    margin: 64px auto;
+   }
+
+   /*TESTIMONIALS*/
+
+   .testimonials__title{
+    font-size: 36px;
+   }
+
+   .testimonials__img{
+    max-width: 375px;
+   }
+
+   .testimonials__img--wrapper{
+    max-width: 375px;
+   }
+
+   /*BOTTOM*/
+
+   .bottom__container--box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+   }
+
+   .bottom__title{
+    padding-bottom: 24px;
+    text-align: center;
+   }
 }
