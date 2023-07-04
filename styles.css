@@ -17,6 +17,10 @@ p{
     line-height: 1.5;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .purple {
     color: #6415ff;
 }
@@ -32,11 +36,6 @@ p{
 a {
     text-decoration: none;
     color: #243E63;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #6415ff;
 }
 
 li{
@@ -81,8 +80,16 @@ nav {
 
 .nav__link{ 
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
 }
+
+.nav__underline:hover{
+border-bottom: 2px solid #6415ff;
+padding-bottom: 3px;
+color: #6415ff;
+transition: all 100ms ease;
+}
+
 
 .logo {
     width: 40px;
@@ -100,9 +107,115 @@ color: #243E63;
 }
 
 .nav__link--login{
-    padding-left: 48px;
+    margin-left: 48px;
 }
 
+
+/* Button Start */
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    color: #243e63;
+  }
+  
+  .btn__burger {
+    display: none;
+  }
+  
+  .btn__menu:hover {
+    color: #6415ff;
+    cursor: pointer;
+  }
+  
+  .menu__backdrop {
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: translateX(400%);
+    transition: all 700ms cubic-bezier(0.79, -0.19, 0.3, 1.47);
+  }
+  
+  .menu--open .menu__backdrop {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
+  .btn__menu--close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu__link {
+    font-size: 18px;
+    color: #1a202c;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .menu__link--btn {
+    background-color: #6415ff;
+    border-radius: 9999px;
+    color: #fff;
+    padding: 12px 32px;
+    transition-duration: 300ms;
+  }
+  
+  .menu__link--btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
+  }
+  
+  .menu__list:last-child {
+    margin: 9px 0;
+  }
+  
+  .menu__list {
+    margin: 9px 0;
+    padding-bottom: 4px;
+  }
+  
+  /* Button Finish */
+   
+  .nav__link--primary {
+    background-color: #6415ff;
+    border-radius: 9999px;
+    color: #fff;
+    padding: 12px 32px;
+    transition-duration: 300ms;
+  }
+  
+  .nav__link--primary:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5011cc;
+  }
+  
+  .login {
+    margin-left: 24px;
+  }
+  
 
 /* LANDING */
 
@@ -606,6 +719,10 @@ max-width: 288px;
     color: #6415ff;
 }
 
+.business--button:hover{
+    background-color: white;
+}
+
 .item__top--color{
     width: 100%;
     height: 10px;
@@ -823,8 +940,8 @@ color: #f7fafc;
 
 /* SMALL TABLETS AND PHONES */
 
-@media (max-width: 1023px) {
-    
+@media (max-width: 1024px) {
+
     .description--para{
         font-size: 16px;
     }
@@ -834,6 +951,10 @@ color: #f7fafc;
 
     .nav__links{
         display: none;
+    }
+
+    .btn__burger{
+        display: block;
     }
 
     /*LANDING*/
