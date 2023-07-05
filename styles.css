@@ -35,7 +35,6 @@ button:hover{
 
 a {
     text-decoration: none;
-    color: #243E63;
 }
 
 li{
@@ -65,7 +64,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
-    padding-top: 32px;
     margin: 0 auto;
     }
 
@@ -81,6 +79,7 @@ nav {
 .nav__link{ 
     font-size: 14px;
     font-weight: bold;
+    color: #243E63;
 }
 
 .nav__underline:hover{
@@ -934,6 +933,17 @@ padding-left: 16px;
     padding-top: 16px;
 }
 
+.footer__item--link{
+    color: white;
+}
+
+.footer__item--link:hover{
+border-bottom: 2px solid white;
+padding-bottom: 3px;
+
+transition: all 100ms ease;
+}
+
 .footer__copyright{
     width: 100%;
     display: flex;
@@ -967,6 +977,13 @@ color: #f7fafc;
     border-radius: 28px;
     background-color: #CBD5E0;
     margin-left: 8px;
+}
+
+.footer__social--icon:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px;
+    transform: translate(1px, -1px);
+    transition: 100ms all ease;
 }
 
 .fa-brands{
@@ -1057,7 +1074,6 @@ color: #f7fafc;
 
     .work__title{
         font-size: 36px;
-        max-width: 386.5px;
         text-align: start;
     }
 
@@ -1127,4 +1143,238 @@ color: #f7fafc;
     padding-bottom: 24px;
     text-align: center;
    }
+}
+
+/*SMARTPHONES*/
+
+@media (max-width: 768px){
+
+/*HEADER*/
+
+.header__container{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.header__description{
+    width: 100%;
+}
+
+.landing__img--wrapping{
+    width: 100%;
+}
+
+.landing__button{
+    top: 65px;
+    left: 1px;
+    max-width: 448px;
+    width: 100%;
+    max-height: 56px;
+    height: 100%;
+}
+
+.header__customer--logos{
+    font-size: 14px;
+}
+
+/*FEATURES*/
+
+.features__container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.feature{
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature__text{
+    padding-top: 8px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+/*WORK*/
+
+.work__container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-direction: column-reverse;
+}
+
+.work__container--img{
+    max-width: 448px;
+}
+
+.work__container--description{
+    text-align: center;
+    padding-top: 64px;
+}
+
+.work__title{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.work__para{
+    text-align: center;
+    font-size: 14px;
+}
+
+/*STEPS*/
+
+.steps__container{
+    flex-direction: column;
+}
+
+.steps__img--container{
+    max-width: 448px;
+}
+
+.steps__title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.steps__container--description{
+    padding-top: 45px;
+    text-align: center;
+}
+
+.step{
+    align-self: center;
+}
+
+/*VALUES*/
+
+.values__container{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.values__img--wrapper{
+    max-width: 448px;
+}
+
+.values__container--description{
+    padding-top: 45px;
+    text-align: center;
+}
+
+.values__title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.25;
+}
+
+.values__list{
+    justify-content: center;
+    padding-left: 24px;
+}
+
+.value__icon{
+    justify-content: center;
+}
+
+.professional__icon{
+    padding-right: 60px;
+}
+
+/*PRICING*/
+
+.pricing__container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials__container{
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.testimonials__img--wrapper{
+    max-width: 448px;
+    width: 100%;
+}
+
+.testimonials__img{
+    max-width: 448px;
+}
+
+.testimonials__container--description{
+    padding-top: 45px;
+    text-align: center;
+}
+
+.testimonials__title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.description--para{
+    text-align: center !important;
+    font-size: 14px;
+}
+
+.testimonials__extra-margin{
+    font-size: 16px;
+}
+
+.testimonials__user--info{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user--name{
+    padding: 0;
+}
+
+.testimonials__name--description{
+    padding: 0;
+}
+
+/*BOTTOM*/
+
+.bottom__container{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.bottom__title{
+    font-size: 24px;
+}
+
+.bottom__buttons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.starting--button{
+    margin:8px 0 16px 0;
+}
+
+/*FOOTER*/
+
+.footer__copyright{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__copyright--text{
+    margin: 32px 0 32px 0;
+}
+
+.footer__social--icon{
+    margin-left: 16px;
+}
+
 }
