@@ -926,6 +926,11 @@ padding-left: 16px;
     padding-top: 16px;
 }
 
+.footer__list--wrapper{
+    width: calc(100%/3);
+    margin-top: 48px;
+}
+
 .footer__list--item{
     padding-left: 0px;
     color: #f7fafc;
@@ -1298,6 +1303,7 @@ color: #f7fafc;
     flex-direction: column;
     padding-bottom: 80px;
     padding-top: 80px;
+    width: 100%;
 }
 
 .testimonials__img--wrapper{
@@ -1312,6 +1318,7 @@ color: #f7fafc;
 .testimonials__container--description{
     padding-top: 45px;
     text-align: center;
+    padding-left: 0;
 }
 
 .testimonials__title{
@@ -1375,6 +1382,11 @@ color: #f7fafc;
 
 .footer__social--icon{
     margin-left: 16px;
+}
+
+.footer__lists{
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 }
