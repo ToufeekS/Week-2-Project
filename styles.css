@@ -275,11 +275,12 @@ padding-top: 12px;
 
 input {
    width: 100%;
-   padding: 20px 192px 20px 32px;
+   padding: 20px 14px 20px 14px;
    border: gray 2px solid;
    border-radius: 9999px;
    opacity: 0.5;
    box-shadow: none;
+   font-size: 16px;
 }
 
 ::placeholder {
